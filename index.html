@@ -11,7 +11,13 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
-
+<style>
+  #footerimage {
+    position: absolute;
+    top: 90%;
+    right: 5%;
+}
+</style
 
 </head>
 <body ng-app="single-page-app">
@@ -21,7 +27,7 @@
   <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
          <ul class="nav navbar-nav">
         <li class="active"><a href="#/">Home<span class="sr-only">(current)</span></a></li>
-        <li><a href="#/about">About me</a></li>
+        
         <li><a href="#/contact">Contact me</a></li>
       </ul>
 </nav>
@@ -29,6 +35,10 @@
   <br/>
  
   <div ng-view class="jumbotron"></div>
+  <div>
+  <img src="images/footer.png" id="footerimage" alt="footerimage">
+  </div>
+
   </div>
 </body>
 </html>
